@@ -1,0 +1,41 @@
+{
+  "name": "jackstand",
+  "version": "0.0.1",
+  "description": "AI-assisted characterization-test generator for legacy code, starting with PHP.",
+  "keywords": [
+    "characterization-tests",
+    "legacy-code",
+    "php",
+    "testing",
+    "test-generation",
+    "llm",
+    "golden-master",
+    "mutation-testing"
+  ],
+  "homepage": "https://github.com/levifarley/jackstand#readme",
+  "bugs": {
+    "url": "https://github.com/levifarley/jackstand/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levifarley/jackstand.git",
+    "directory": "packages/cli"
+  },
+  "license": "MIT",
+  "author": "Levi Farley",
+  "type": "module",
+  "bin": {
+    "jackstand": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  }
+}

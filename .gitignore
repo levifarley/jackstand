@@ -1,0 +1,54 @@
+# --- Private planning & scratch (kept local, never committed) ---
+DESIGN.md
+NOTES.md
+docs/PLAN.md
+PLAN.md
+scratch/
+*.scratch.*
+*.local.md
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Dependencies ---
+node_modules/
+vendor/
+
+# --- Build output ---
+dist/
+build/
+*.tsbuildinfo
+*.tgz
+
+# --- Test & coverage output ---
+coverage/
+reports/
+.stryker-tmp/
+.phpunit.result.cache
+.vitest-cache/
+
+# --- jackstand run artifacts & targets ---
+targets/
+.jackstand/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+logs/
+
+# --- Claude Code (local only; .claude/settings.json IS committed) ---
+.claude/settings.local.json
+CLAUDE.local.md
+
+# --- Editors & OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
